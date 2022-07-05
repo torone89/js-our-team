@@ -74,18 +74,21 @@ const team = [
 console.log(team);
 
 
+
+
 for (let i = 0; i < team.length; i++) {
     const informazioniCrew = team[i];
-    console.log('---------INFORMAZIONI DELLA CREW-----------')
-    for (let key in informazioniCrew) {
+    stampaDati.innerHTML += `<li><img src="img/${informazioniCrew.img}" alt="Immagine Membro"></img></li>`
 
-        console.log(key + ": " + informazioniCrew[key])
+    // console.log('---------INFORMAZIONI DELLA CREW-----------')
+    // for (let key in informazioniCrew) {
 
-        // / # MILESTONE 2:
-        // Stampare le stesse informazioni su DOM sottoforma di stringhe
-        stampaDati.innerHTML += `<li><strong>${key}:</strong>  ${informazioniCrew[key]}</li>`
-    }
+    //     console.log(key + ": " + informazioniCrew[key])
+
+    //     // / # MILESTONE 2:
+    //     // Stampare le stesse informazioni su DOM sottoforma di stringhe
+    //     stampaDati.innerHTML += `<li><strong>${key}:</strong></li>  <li>${informazioniCrew[key]}</li>`
+
+
+    // }
 }
-
-console.log(team);
-
