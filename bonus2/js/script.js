@@ -10,15 +10,10 @@ console.log("JS")
 
 // # MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
-// # BONUS 1:
-// Trasformare la stringa foto in una immagine effettiva (le trovate in allegato)
+
 // # BONUS 2:
 // Organizzare i singoli membri in card/schede e ispirarci alle grafiche in allegato
-// Consigli del giorno:
-// Ragioniamo come sempre a step.
-// Prima la logica in italiano e poi traduciamo in codice.
-// E ricordiamoci che console.log() è nostro amico!
-// Buon lavoro! */
+
 // // # DATI
 
 // # MILESTONE 0:
@@ -73,20 +68,25 @@ const team = [
 
 console.log(team);
 
-
 for (let i = 0; i < team.length; i++) {
     const informazioniCrew = team[i];
-    console.log('---------INFORMAZIONI DELLA CREW-----------')
-    for (let key in informazioniCrew) {
 
-        console.log(key + ": " + informazioniCrew[key])
+    // # BONUS 1:
+    // Trasformare la stringa foto in una immagine effettiva (le trovate in allegato)
+    stampaDati.innerHTML += `
 
-        // / # MILESTONE 2:
-        // Stampare le stesse informazioni su DOM sottoforma di stringhe
-        stampaDati.innerHTML += `
-        <li><strong>${key}:</strong>  ${informazioniCrew[key]}</li>`
-    }
+    <li class="col-4 text-center p-1"><img src="img/${informazioniCrew.img}" alt="Immagine Membro" class="img-fluid"></img>
+     <Strong>${informazioniCrew.nome}</strong></br>
+        "${informazioniCrew.lavoro} </li>
+    
+          `
+
+    // console.log('---------INFORMAZIONI DELLA CREW-----------')
+    // for (let key in informazioniCrew) {
+    //     console.log(key + ": " + informazioniCrew[key])
+    //     // / # MILESTONE 2:
+    //     // Stampare le stesse informazioni su DOM sottoforma di stringhe
+    //     stampaDati.innerHTML += `<li><strong>${key}:</strong></li>  <li>${informazioniCrew[key]}</li>`
+
+    // }
 }
-
-console.log(team);
-
