@@ -7,8 +7,7 @@ console.log("JS")
 // Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 // Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
-// # MILESTONE 1:
-// Stampare su console le informazioni di nome, ruolo e la stringa della foto
+
 // # MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 // # BONUS 1:
@@ -32,6 +31,8 @@ console.log("JS")
 // Scott Estrada |	Developer            |	scott-estrada-developer.jpg
 // Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg 
 
+const stampaDati = document.getElementById('dati');
+console.log(stampaDati)
 const team = [
     {
         nome: 'Wayne Barnett',
@@ -68,6 +69,8 @@ const team = [
 // / # MILESTONE 1:
 // Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
+// Recuperto dove stampare sul dom i dati della crew
+
 console.log(team);
 
 
@@ -77,5 +80,19 @@ for (let i = 0; i < team.length; i++) {
     for (let key in informazioniCrew) {
 
         console.log(key + ": " + informazioniCrew[key])
+
+        // / # MILESTONE 2:
+        // Stampare le stesse informazioni su DOM sottoforma di stringhe
+        stampaDati.innerHTML += `<li><strong>${key}:</strong>  ${informazioniCrew[key]}</li>`
     }
 }
+
+
+console.log(team);
+
+
+
+// for (let i = 0; i < team.length; i++) {
+//     const infomembers = team[i];
+//     members.innerHTML += <li>${infomembers.name} | ${infomembers.work} | ${infomembers.image}</li>;
+// }
