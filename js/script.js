@@ -6,8 +6,7 @@ console.log("JS")
 // nome repo: js-our-team
 // Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 // Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
-// # MILESTONE 0:
-// Creare l’array di oggetti con le informazioni fornite.
+
 // # MILESTONE 1:
 // Stampare su console le informazioni di nome, ruolo e la stringa della foto
 // # MILESTONE 2:
@@ -22,3 +21,49 @@ console.log("JS")
 // E ricordiamoci che console.log() è nostro amico!
 // Buon lavoro! */
 // // # DATI
+
+// # MILESTONE 0:
+// Creare l’array di oggetti con le informazioni fornite.
+
+// Wayne Barnett |	Founder & CEO        |	wayne-barnett-founder-ceo.jpg
+// Angela Caroll |	Chief Editor         |	angela-caroll-chief-editor.jpg
+// Walter Gordon |	Office Manager       |	walter-gordon-office-manager.jpg
+// Angela Lopez  |	Social Media Manager |	angela-lopez-social-media-manager.jpg
+// Scott Estrada |	Developer            |	scott-estrada-developer.jpg
+// Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg 
+
+const team = [
+    {
+        nome: 'Wayne Barnett',
+        lavoro: 'Founder & CEO',
+        img: 'wayne-barnett-founder-ceo.jpg',
+    },
+    {
+        nome: 'Angela Caroll',
+        lavoro: 'Chief Editor',
+        image: 'angela-caroll-chief-editor.jpg',
+    },
+    {
+        nome: 'Walter Gordon',
+        lavoro: 'Office Manager',
+        img: 'walter-gordon-office-manager.jpg',
+    },
+    {
+        nome: 'Angela Lopez',
+        lavoro: 'Social Media Manager',
+        img: 'angela-lopez-social-media-manager.jpg',
+    },
+    {
+        nome: 'Scott Estrada',
+        lavoro: 'Developer',
+        img: 'scott-estrada-developer.jpg',
+    },
+    {
+        nome: 'Barbara Ramos',
+        lavoro: 'Graphic Designer',
+        img: 'barbara-ramos-graphic-designer.jpg',
+    },
+];
+
+// / # MILESTONE 1:
+// Stampare su console le informazioni di nome, ruolo e la stringa della foto
