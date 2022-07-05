@@ -41,7 +41,7 @@ const team = [
     {
         nome: 'Angela Caroll',
         lavoro: 'Chief Editor',
-        image: 'angela-caroll-chief-editor.jpg',
+        img: 'angela-caroll-chief-editor.jpg',
     },
     {
         nome: 'Walter Gordon',
@@ -67,3 +67,15 @@ const team = [
 
 // / # MILESTONE 1:
 // Stampare su console le informazioni di nome, ruolo e la stringa della foto
+
+console.log(team);
+
+
+for (let i = 0; i < team.length; i++) {
+    const informazioniCrew = team[i];
+    console.log('---------INFORMAZIONI DELLA CREW-----------')
+    for (let key in informazioniCrew) {
+
+        console.log(key + ": " + informazioniCrew[key])
+    }
+}
