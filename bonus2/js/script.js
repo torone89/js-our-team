@@ -68,6 +68,8 @@ const team = [
 
 console.log(team);
 
+// let listContent = '' SOLUzione 2
+
 for (let i = 0; i < team.length; i++) {
     const informazioniCrew = team[i];
 
@@ -78,8 +80,20 @@ for (let i = 0; i < team.length; i++) {
     <li class="col-4 text-center p-1"><img src="img/${informazioniCrew.img}" alt="Immagine Membro" class="img-fluid"></img>
      <Strong>${informazioniCrew.nome}</strong></br>
         "${informazioniCrew.lavoro} </li>
-    
-          `
+        `
+
+    // SOLUZIONE 2 ul innestati
+    // let listContent = ''
+
+    // for (let i = 0; i < team.length; i++) {
+    //     const informazioniCrew = team[i];
+    //     listContent += `<ul><li>`
+    //     for (const key in informazioniCrew) {
+    //         listContent += `<li><Strong>${key}</strong></br></li>`;
+    //         if  (key === img) listContent += `<img src="img/${informazioniCrew[key]}" alt="Immagine Membro" class="img-fluid"></img>`
+    //     else listContent += `<li>${informazioniCrew[key]}</li>`
+    //     listContent += `</ul></li>`
+    // }
 
     // console.log('---------INFORMAZIONI DELLA CREW-----------')
     // for (let key in informazioniCrew) {
